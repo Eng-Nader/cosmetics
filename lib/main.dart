@@ -1,4 +1,4 @@
-import 'views/home/view.dart';
+import 'package:cosmentics/views/home/view.dart';
 import 'core/logic/helper_methods.dart';
 import 'package:flutter/material.dart';
 
@@ -62,7 +62,6 @@ class Cosmetics extends StatelessWidget {
     );
   }
 }
-
 
 OutlineInputBorder buildBorder() {
   return OutlineInputBorder(

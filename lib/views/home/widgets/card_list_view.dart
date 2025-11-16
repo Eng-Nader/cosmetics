@@ -1,4 +1,4 @@
-import '../pages/card.dart';
+import '../pages/cart.dart';
 import 'card_list_view_item.dart';
 import 'package:flutter/material.dart';
 

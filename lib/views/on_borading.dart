@@ -11,7 +11,7 @@ class OnBoradingView extends StatefulWidget {
 }
 
 class _OnBoradingViewState extends State<OnBoradingView> {
-  final list = [
+  final onBoradingList = [
     _Model(
       image: 'on_borading_one.png',
       title: 'WELCOME!',
@@ -41,10 +41,10 @@ class _OnBoradingViewState extends State<OnBoradingView> {
           setState(() {});
         },
 
-        itemCount: list.length,
+        itemCount: onBoradingList.length,
         itemBuilder: (context, index) => _OnBoradingItem(
           currentIndex: currentIndex,
-          onBordingModel: list[index],
+          onBordingModel: onBoradingList[index],
         ),
       ),
     );

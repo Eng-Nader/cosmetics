@@ -1,5 +1,5 @@
 import '../../../core/ui/app_image.dart';
-import '../pages/card.dart';
+import '../pages/cart.dart';
 import 'custom_add_remove_button.dart';
 import 'package:flutter/material.dart';
 

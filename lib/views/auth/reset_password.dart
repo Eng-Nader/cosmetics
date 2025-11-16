@@ -12,28 +12,33 @@ class ResetPasswordView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomAuthIntinal(
-        children: [
-          const CustomAuthLogo(title: 'Reset password'),
-          const SizedBox(height: 30),
-          Text(
-            textAlign: TextAlign.center,
-            'Please enter your phone number below\n  to recovery your password.',
-            style: TextStyle(
-              color: const Color(0xff434C6D).withValues(alpha: .8),
-              fontSize: 14,
-            ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            children: [
+              const CustomAuthLogo(title: 'Reset password'),
+              const SizedBox(height: 30),
+              Text(
+                textAlign: TextAlign.center,
+                'Please enter your phone number below\n  to recovery your password.',
+                style: TextStyle(
+                  color: const Color(0xff434C6D).withValues(alpha: .8),
+                  fontSize: 14,
+                ),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const CustomPhoneAuthFild(),
+              const SizedBox(height: 30),
+              AppButton(
+                title: 'next',
+                onPressed: () => goTo(const OneTimePasswordView()),
+              ),
+            ],
           ),
-          const SizedBox(
-            height: 30,
-          ),
-          const CustomPhoneAuthFild(),
-          const SizedBox(height: 30),
-          AppButton(
-            title: 'next',
-            onPressed: () => goTo(const OneTimePasswordView()),
-          ),
-        ],
+        ),
       ),
     );
   }
