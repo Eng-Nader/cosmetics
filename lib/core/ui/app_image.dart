@@ -16,7 +16,7 @@ class AppImage extends StatelessWidget {
   Widget build(BuildContext context) {
     if (image.toLowerCase().endsWith('svg')) {
       return SvgPicture.asset(
-        'assets/images/$image',
+        'assets/svg/$image',
         color: color,
         height: height,
         width: width,
