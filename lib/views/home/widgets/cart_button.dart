@@ -10,7 +10,7 @@ class CartButton extends StatefulWidget {
 }
 
 class _CartButtonState extends State<CartButton> {
-  int number = 0;
+  int number = 1;
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
@@ -27,8 +27,10 @@ class _CartButtonState extends State<CartButton> {
         children: [
           IconButton(
             onPressed: () {
-              number--;
-              setState(() {});
+              if (number > 1) {
+                number--;
+                setState(() {});
+              }
             },
             icon: const Icon(Icons.remove),
           ),

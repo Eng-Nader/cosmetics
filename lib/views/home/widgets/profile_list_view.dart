@@ -1,31 +1,31 @@
-import '../pages/profile.dart';
-import 'profile_list_view_item.dart';
+import 'package:cosmentics/core/ui/app_image.dart';
+
 import 'package:flutter/material.dart';
 
-class ProfileListView extends StatelessWidget {
-  const ProfileListView({super.key});
-  final list = const [
-    ProfileModel(
+class ProfileView extends StatelessWidget {
+  const ProfileView({super.key});
+  final _list = const [
+    _Model(
       'edit.svg',
       'Edit Info',
     ),
-    ProfileModel(
+    _Model(
       'checkOut.svg',
       'Order History',
     ),
-    ProfileModel(
+    _Model(
       'wallet.svg',
       'wallet',
     ),
-    ProfileModel(
+    _Model(
       'setting.svg',
       'setting',
     ),
-    ProfileModel(
+    _Model(
       'vouceer.svg',
       'vouceer',
     ),
-    ProfileModel(
+    _Model(
       'logout.svg',
       'logOUt',
     ),
@@ -35,14 +35,44 @@ class ProfileListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       physics: const NeverScrollableScrollPhysics(),
-      itemCount: list.length,
+      itemCount: _list.length,
       shrinkWrap: true,
-      itemBuilder: (context, index) {
-        return ProfileListViewItem(
-          profileModel: list[index],
-          index: index,
-        );
-      },
+      itemBuilder: (context, index) => _Item(
+        model: _list[index],
+        index: index,
+      ),
+    );
+  }
+}
+
+class _Model {
+  final String image, titiel;
+  const _Model(this.image, this.titiel);
+}
+
+class _Item extends StatelessWidget {
+  const _Item({
+    required this.model,
+    required this.index,
+  });
+  final _Model model;
+  final int index;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: AppImage(
+        image: model.image,
+      ),
+      title: Text(
+        model.titiel,
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+          color: index == 5 ? const Color(0xffCD0F0F) : const Color(0xff434C6D),
+        ),
+      ),
+      trailing: const AppImage(image: 'arrow.svg'),
     );
   }
 }

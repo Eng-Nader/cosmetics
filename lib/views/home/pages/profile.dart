@@ -1,5 +1,5 @@
 import '../widgets/profile_list_view.dart';
-import '../widgets/custom_profile_header.dart';
+import '../widgets/profile_header.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -11,7 +11,7 @@ class ProfilePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            CustomProfileHeader(),
+            ProfileHeader(),
             SizedBox(
               height: 60,
             ),
@@ -22,15 +22,10 @@ class ProfilePage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            ProfileListView(),
+            ProfileView(),
           ],
         ),
       ),
     );
   }
-}
-
-class ProfileModel {
-  final String image, titiel;
-  const ProfileModel(this.image, this.titiel);
 }

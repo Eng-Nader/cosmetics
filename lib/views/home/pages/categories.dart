@@ -26,7 +26,7 @@ class CategoriesPage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                CategoriesView(),
+                Expanded(child: CategoriesView()),
               ],
             ),
           ),

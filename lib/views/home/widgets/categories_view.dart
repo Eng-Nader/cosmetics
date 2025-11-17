@@ -50,7 +50,6 @@ class CategoriesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      shrinkWrap: true,
       itemCount: _list.length,
       itemBuilder: (context, index) => _Item(
         model: _list[index],

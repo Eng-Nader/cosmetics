@@ -1,8 +1,8 @@
 import '../../../core/ui/app_image.dart';
 import 'package:flutter/material.dart';
 
-class CustomProfileHeader extends StatelessWidget {
-  const CustomProfileHeader({
+class ProfileHeader extends StatelessWidget {
+  const ProfileHeader({
     super.key,
   });
 
@@ -32,7 +32,9 @@ class CustomProfileHeader extends StatelessWidget {
           bottom: -50,
           child: CircleAvatar(
             radius: 50,
-            child: AppImage(image: 'prof.png', color: null),
+            child: AppImage(
+              image: 'prof.png',
+            ),
           ),
         ),
       ],

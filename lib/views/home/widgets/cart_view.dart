@@ -1,5 +1,5 @@
 import 'package:cosmentics/core/ui/app_image.dart';
-import 'package:cosmentics/views/home/widgets/custom_add_remove_button.dart';
+import 'package:cosmentics/views/home/widgets/cart_button.dart';
 import 'package:flutter/material.dart';
 
 class CartView extends StatelessWidget {
@@ -65,6 +65,7 @@ class CartView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      padding: const EdgeInsets.only(bottom: 100),
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemBuilder: (context, index) => _Item(
