@@ -1,6 +1,5 @@
 import '../../core/ui/app_image.dart';
 import 'widgets/custom_auth_logo.dart';
-import 'widgets/custom_auth_phone_fild.dart';
 import '../../core/ui/app_input.dart';
 import '../../core/ui/app_button.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +31,6 @@ class _SignUpViewState extends State<SignUpView> {
               //   labelText: 'Your Name',
               // ),
               const SizedBox(height: 33),
-              const CustomPhoneAuthFild(),
               const SizedBox(height: 16),
               // AppInput(
               //   obscureText: isSecure ? false : true,

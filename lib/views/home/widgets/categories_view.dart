@@ -50,6 +50,9 @@ class CategoriesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      padding: const EdgeInsets.only(bottom: 100),
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: _list.length,
       itemBuilder: (context, index) => _Item(
         model: _list[index],

@@ -1,8 +1,6 @@
 import '../../core/logic/helper_methods.dart';
 import 'otp.dart';
-import 'widgets/custom_auth_intinal.dart';
 import 'widgets/custom_auth_logo.dart';
-import 'widgets/custom_auth_phone_fild.dart';
 import '../../core/ui/app_button.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +12,7 @@ class ResetPasswordView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             children: [
               const CustomAuthLogo(title: 'Reset password'),
@@ -30,7 +28,6 @@ class ResetPasswordView extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              const CustomPhoneAuthFild(),
               const SizedBox(height: 30),
               AppButton(
                 title: 'next',

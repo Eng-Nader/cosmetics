@@ -99,17 +99,15 @@ class _Item extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
               child: AppImage(
                 image: model.image,
-
-                height: 115,
+                fit: BoxFit.cover,
+                height: 100,
                 width: 100,
               ),
             ),
-            const Positioned(
-              top: 10,
-              left: 10,
-              child: AppImage(
+            IconButton(
+              onPressed: () {},
+              icon: const AppImage(
                 image: 'out.svg',
-                color: null,
               ),
             ),
           ],

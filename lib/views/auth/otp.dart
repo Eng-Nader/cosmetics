@@ -1,7 +1,6 @@
 import '../../core/logic/helper_methods.dart';
 import 'create_password.dart';
 import 'widgets/cusotm_pin_code_fild.dart';
-import 'widgets/custom_auth_intinal.dart';
 import 'widgets/custom_auth_logo.dart';
 import 'widgets/custom_dialog.dart';
 import '../../core/ui/app_button.dart';

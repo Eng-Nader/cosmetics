@@ -10,8 +10,8 @@ class CategoriesPage extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: Center(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+          child: SingleChildScrollView(
+             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Column(
               children: [
                 Text(
@@ -26,7 +26,7 @@ class CategoriesPage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Expanded(child: CategoriesView()),
+                CategoriesView(),
               ],
             ),
           ),

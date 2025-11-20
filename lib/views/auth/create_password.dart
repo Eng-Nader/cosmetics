@@ -5,7 +5,6 @@ import '../../core/ui/app_button.dart';
 import '../../core/ui/app_image.dart';
 import 'login.dart';
 import 'otp.dart';
-import 'widgets/custom_auth_intinal.dart';
 import 'widgets/custom_auth_logo.dart';
 import '../../core/ui/app_input.dart';
 
