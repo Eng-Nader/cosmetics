@@ -22,34 +22,34 @@
 ## 📱 Screenshots
 
 ### 🏠 Home
-![Home](screenshot/home.png)
+![Home](assets/screenshot/home.png)
 
 ### 🔐 Login
-![Login](screenshot/login.png)
+![Login](assets/screenshot/login.png)
 
 ### 🔢 OTP
-![OTP](screenshot/otp.png)
+![OTP](assets/screenshot/otp.png)
 
 ### 📝 Sign Up
-![Sign Up](screenshot/sign_up.png)
+![Sign Up](assets/screenshot/sign_up.png)
 
 ### 🏠 Categories
-![Categories](screenshot/categories.png)
+![Categories](assets/screenshot/categories.png)
 
 ### 🧾 Create Page
-![Create Page](screenshot/create_page.png)
+![Create Page](assets/screenshot/create_page.png)
 
 ### 🪟 Dialog
-![Dialog](screenshot/dialog.png)
+![Dialog](assets/screenshot/dialog.png)
 
 ### 🛍️ Cart
-![Cart](screenshot/cart.png)
+![Cart](assets/screenshot/cart.png)
 
 ### 💳 Checkout
-![Checkout](screenshot/check_out.png)
+![Checkout](assets/screenshot/check_out.png)
 
 ### 👤 Profile
-![Profile](screenshot/profile.png)
+![Profile](assets/screenshot/profile.png)
 
 ### 🚀 Splash
-![Splash](screenshot/splash.png)
+![Splash](assets/screenshot/splash.png)
