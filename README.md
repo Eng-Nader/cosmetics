@@ -22,34 +22,43 @@
 ## 📱 Screenshots
 
 ### 🏠 Home
-![Home](assets/screenshot/home.png)
+
+![Home](assets/screenshot/home.png) ![Login](assets/screenshot/login.png)
 
 ### 🔐 Login
-![Login](assets/screenshot/login.png)
 
 ### 🔢 OTP
+
 ![OTP](assets/screenshot/otp.png)
 
 ### 📝 Sign Up
+
 ![Sign Up](assets/screenshot/sign_up.png)
 
 ### 🏠 Categories
+
 ![Categories](assets/screenshot/categories.png)
 
 ### 🧾 Create Page
+
 ![Create Page](assets/screenshot/create_page.png)
 
 ### 🪟 Dialog
+
 ![Dialog](assets/screenshot/dialog.png)
 
 ### 🛍️ Cart
+
 ![Cart](assets/screenshot/cart.png)
 
 ### 💳 Checkout
+
 ![Checkout](assets/screenshot/check_out.png)
 
 ### 👤 Profile
+
 ![Profile](assets/screenshot/profile.png)
 
 ### 🚀 Splash
+
 ![Splash](assets/screenshot/splash.png)
