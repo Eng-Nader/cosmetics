@@ -1,6 +1,7 @@
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:cosmentics/core/ui/app_image.dart';
 import 'package:cosmentics/views/auth/login.dart';
+import 'package:cosmentics/views/auth/widgets/sucees_dialog.dart';
 
 import '../../core/logic/helper_methods.dart';
 import 'create_password.dart';
@@ -85,9 +86,20 @@ class OtpView extends StatelessWidget {
               const SizedBox(height: 60),
               AppButton(
                 title: 'Done',
-                onPressed: () => goTo(
-                  isComeSignUp ? const LoginView() : const CreatePasswordView(),
-                ),
+                onPressed: () {
+                  if (isComeSignUp) {
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return SucessDialog(
+                          isComeSignUp: isComeSignUp,
+                        );
+                      },
+                    );
+                  } else {
+                    goTo(const CreatePasswordView());
+                  }
+                },
               ),
             ],
           ),

@@ -1,14 +1,15 @@
 import 'package:cosmentics/core/logic/helper_methods.dart';
 import 'package:cosmentics/views/auth/login.dart';
+import 'package:cosmentics/views/home/view.dart';
 
 import '../../../core/ui/app_button.dart';
 import '../../../core/ui/app_image.dart';
 import 'package:flutter/material.dart';
 
 class SucessDialog extends StatelessWidget {
-  const SucessDialog({
-    super.key,
-  });
+  const SucessDialog({super.key, this.isComeSignUp = false});
+
+  final bool isComeSignUp;
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +23,10 @@ class SucessDialog extends StatelessWidget {
           width: 70,
         ),
         const SizedBox(height: 20),
-        const Text(
+        Text(
           textAlign: TextAlign.center,
-          'Password Created!',
-          style: TextStyle(
+          isComeSignUp ? 'Account Activated!' : 'Password Created!',
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
           ),
@@ -33,7 +34,9 @@ class SucessDialog extends StatelessWidget {
         const SizedBox(height: 10),
         Text(
           textAlign: TextAlign.center,
-          'Congratulations! Your password\n  has been successfully created',
+          isComeSignUp
+              ? 'Congratulations! Your account \n  has been successfully activated'
+              : 'Congratulations! Your password\n  has been successfully created',
           style: TextStyle(
             fontWeight: FontWeight.w500,
             fontSize: 16,
@@ -44,8 +47,11 @@ class SucessDialog extends StatelessWidget {
           height: 10,
         ),
         AppButton(
-          title: 'Go to Home',
-          onPressed: () => goTo(const LoginView(), canPop: false),
+          title: isComeSignUp ? 'Go to Home' : 'Return to login',
+          onPressed: () => goTo(
+            isComeSignUp ? const HomeView() : const LoginView(),
+            canPop: false,
+          ),
         ),
       ],
     );
