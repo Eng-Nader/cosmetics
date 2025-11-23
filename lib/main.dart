@@ -1,7 +1,4 @@
-import 'views/auth/login.dart';
-import 'views/auth/otp.dart';
-import 'views/home/view.dart';
-import 'views/on_borading.dart';
+
 import 'views/splash.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
