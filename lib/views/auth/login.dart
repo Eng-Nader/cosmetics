@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../core/ui/app_input.dart';
 import '../../core/ui/app_login_or_signup.dart';
 import 'forget_password.dart';
@@ -23,43 +25,43 @@ class _LoginViewState extends State<LoginView> {
         key: _formKey,
         child: SafeArea(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding:  EdgeInsets.symmetric(horizontal: 16.r),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const SizedBox(height: 30),
-                const AppImage(
+                 SizedBox(height: 30.h),
+                 AppImage(
                   image: 'login_logo.png',
-                  height: 227,
-                  width: 284,
+                  height: 227.h,
+                  width: 284.w,
                 ),
-                const SizedBox(height: 24),
-                const Text(
+                 SizedBox(height: 24.h),
+                 Text(
                   textAlign: TextAlign.center,
                   'Login Now',
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 24.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 20),
+                 SizedBox(height: 20.h),
                 Text(
                   textAlign: TextAlign.center,
                   'Please enter the details below to continue',
                   style: TextStyle(
                     color: const Color(0xff434C6D).withValues(alpha: .8),
-                    fontSize: 14,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                const SizedBox(height: 25),
+                 SizedBox(height: 25.h),
                 const AppInput(
                   withCountryCode: true,
                   label: 'phone Number',
                   hintText: 'phone Number',
                 ),
-                const SizedBox(
-                  height: 10,
+                 SizedBox(
+                  height: 10.h,
                 ),
                 const AppInput(
                   hintText: 'your Password',
@@ -72,7 +74,7 @@ class _LoginViewState extends State<LoginView> {
                     child: const Text('Forget Password?'),
                   ),
                 ),
-                const SizedBox(height: 43),
+                 SizedBox(height: 43.h),
                 AppButton(
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
@@ -81,7 +83,7 @@ class _LoginViewState extends State<LoginView> {
                   },
                   title: 'Login ',
                 ),
-                const SizedBox(height: 20),
+                 SizedBox(height: 20.h),
               ],
             ),
           ),

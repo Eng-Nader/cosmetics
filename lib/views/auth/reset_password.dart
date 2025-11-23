@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../core/logic/helper_methods.dart';
 import 'otp.dart';
 import '../../core/ui/app_button.dart';
@@ -11,22 +13,22 @@ class ResetPasswordView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding:  EdgeInsets.symmetric(horizontal: 16.r),
           child: Column(
             children: [
-              const SizedBox(height: 30),
+               SizedBox(height: 30.h),
               Text(
                 textAlign: TextAlign.center,
                 'Please enter your phone number below\n  to recovery your password.',
                 style: TextStyle(
                   color: const Color(0xff434C6D).withValues(alpha: .8),
-                  fontSize: 14,
+                  fontSize: 14.sp,
                 ),
               ),
-              const SizedBox(
-                height: 30,
+               SizedBox(
+                height: 30.h,
               ),
-              const SizedBox(height: 30),
+               SizedBox(height: 30.h),
               AppButton(
                 title: 'next',
                 onPressed: () => goTo(const OtpView()),

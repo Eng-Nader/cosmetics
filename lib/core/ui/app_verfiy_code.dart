@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class AppVerfiyCode extends StatelessWidget {
@@ -8,12 +9,12 @@ class AppVerfiyCode extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PinCodeTextField(
-      cursorHeight: 15.5,
+      cursorHeight: 15.5.h,
       hintCharacter: '_',
       autoFocus: true,
       mainAxisAlignment: MainAxisAlignment.center,
-      separatorBuilder: (context, index) => const SizedBox(
-        width: 12,
+      separatorBuilder: (context, index) =>  SizedBox(
+        width: 12.w
       ),
       animationDuration: const Duration(milliseconds: 350),
       animationType: AnimationType.scale,
@@ -23,9 +24,9 @@ class AppVerfiyCode extends StatelessWidget {
       textStyle: const TextStyle(color: Colors.black),
       pinTheme: PinTheme(
         shape: PinCodeFieldShape.box,
-        borderRadius: BorderRadius.circular(8),
-        fieldHeight: 45,
-        fieldWidth: 45,
+        borderRadius: BorderRadius.circular(8.r),
+        fieldHeight: 45.h,
+        fieldWidth: 45.w,
         activeColor: const Color(0xffD75D72),
         selectedColor: const Color(0xffD75D72),
         inactiveColor: const Color(0xff898992).withValues(alpha: .36),

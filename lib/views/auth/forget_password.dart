@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../core/logic/helper_methods.dart';
 import '../../core/ui/app_button.dart';
 import '../../core/ui/app_image.dart';
@@ -13,41 +15,41 @@ class ForgetPasswordView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding:  EdgeInsets.symmetric(horizontal: 16.h),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const AppImage(
+               AppImage(
                 image: 'login_logo.png',
-                height: 227,
-                width: 284,
+                height: 227.h,
+                width: 284.w,
               ),
-              const SizedBox(height: 24),
-              const Text(
+               SizedBox(height: 24.h),
+               Text(
                 textAlign: TextAlign.center,
                 'Forget Passwrod',
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 24.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(
-                height: 10,
+               SizedBox(
+                height: 10.h,
               ),
               const Text(
                 textAlign: TextAlign.center,
                 'Please enter your phone number below \n to recovery your password.',
               ),
-              const SizedBox(
-                height: 10,
+               SizedBox(
+                height: 10.h,
               ),
               const AppInput(
                 withCountryCode: true,
                 hintText: 'phone Number',
                 label: 'phone Number',
               ),
-              const SizedBox(
-                height: 40,
+               SizedBox(
+                height: 40.h,
               ),
               AppButton(
                 title: 'Next',

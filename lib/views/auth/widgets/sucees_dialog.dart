@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../core/logic/helper_methods.dart';
 import '../login.dart';
 import '../../home/view.dart';
@@ -14,24 +16,24 @@ class SucessDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SimpleDialog(
-      contentPadding: const EdgeInsets.all(16),
+      contentPadding: EdgeInsets.all(16.r),
       backgroundColor: const Color(0xffD9D9D9),
       children: [
-        const AppImage(
+        AppImage(
           image: 'success.json',
-          height: 70,
-          width: 70,
+          height: 70.h,
+          width: 70.w,
         ),
-        const SizedBox(height: 20),
+        SizedBox(height: 20.h),
         Text(
           textAlign: TextAlign.center,
           isComeSignUp ? 'Account Activated!' : 'Password Created!',
-          style: const TextStyle(
+          style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 16,
+            fontSize: 16.sp,
           ),
         ),
-        const SizedBox(height: 10),
+        SizedBox(height: 10.h),
         Text(
           textAlign: TextAlign.center,
           isComeSignUp
@@ -39,12 +41,12 @@ class SucessDialog extends StatelessWidget {
               : 'Congratulations! Your password\n  has been successfully created',
           style: TextStyle(
             fontWeight: FontWeight.w500,
-            fontSize: 16,
+            fontSize: 16.h,
             color: const Color(0xff434C6D).withValues(alpha: .8),
           ),
         ),
-        const SizedBox(
-          height: 10,
+        SizedBox(
+          height: 10.h,
         ),
         AppButton(
           title: isComeSignUp ? 'Go to Home' : 'Return to login',

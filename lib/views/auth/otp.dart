@@ -1,7 +1,7 @@
-import 'package:circular_countdown_timer/circular_countdown_timer.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../core/ui/app_image.dart';
 import '../../core/ui/app_resent_otp.dart';
-import 'login.dart';
 import 'widgets/sucees_dialog.dart';
 
 import '../../core/logic/helper_methods.dart';
@@ -19,26 +19,26 @@ class OtpView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding:  EdgeInsets.symmetric(horizontal: 16.r),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const AppImage(
+               AppImage(
                 image: 'login_logo.png',
-                height: 227,
-                width: 284,
+                height: 227.h,
+                width: 284.w,
               ),
-              const SizedBox(height: 24),
-              const Text(
+               SizedBox(height: 24.h),
+               Text(
                 textAlign: TextAlign.center,
                 'Verify Code',
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 24.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(
-                height: 10,
+               SizedBox(
+                height: 10.h,
               ),
               Text.rich(
                 style: TextStyle(
@@ -65,7 +65,7 @@ class OtpView extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 40),
+               SizedBox(height: 40.h),
               TextButton(
                 style: TextButton.styleFrom(
                   visualDensity: VisualDensity.compact,
@@ -73,18 +73,18 @@ class OtpView extends StatelessWidget {
                   alignment: AlignmentDirectional.centerStart,
                 ),
                 onPressed: () => Navigator.pop(context),
-                child: const Text(
+                child:  Text(
                   'Edit the number',
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 14.sp,
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+               SizedBox(height: 20.h),
               const AppVerfiyCode(),
               const AppResentOtp(),
 
-              const SizedBox(height: 60),
+               SizedBox(height: 60.h),
               AppButton(
                 title: 'Done',
                 onPressed: () {

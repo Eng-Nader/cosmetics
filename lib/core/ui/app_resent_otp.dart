@@ -1,6 +1,7 @@
 
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppResentOtp extends StatefulWidget {
   const AppResentOtp({super.key});
@@ -15,10 +16,10 @@ class _AppResentOtpState extends State<AppResentOtp> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+         Text(
           'Didn’t receive a code?',
           style: TextStyle(
-            fontSize: 12,
+            fontSize: 12.sp,
           ),
         ),
         TextButton(
@@ -43,8 +44,8 @@ class _AppResentOtpState extends State<AppResentOtp> {
             textStyle: const TextStyle(color: Color(0xff8E8EA9)),
             isReverse: true,
             textFormat: CountdownTextFormat.MM_SS,
-            width: 50,
-            height: 50,
+            width: 50.w,
+            height: 50.h,
             duration: 5,
             fillColor: Colors.transparent,
             ringColor: Colors.transparent,

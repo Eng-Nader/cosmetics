@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppButton extends StatelessWidget {
   const AppButton({super.key, required this.title, required this.onPressed});
@@ -11,8 +12,8 @@ class AppButton extends StatelessWidget {
       onPressed: onPressed,
       child: Text(
         title,
-        style: const TextStyle(
-          fontSize: 20,
+        style:  TextStyle(
+          fontSize: 20.sp,
           fontWeight: FontWeight.bold,
         ),
       ),

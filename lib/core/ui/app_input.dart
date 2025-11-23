@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'app_image.dart';
 import 'package:flutter/material.dart';
 
@@ -34,10 +36,10 @@ class _AppInputState extends State<AppInput> {
       children: [
         if (widget.withCountryCode)
           Padding(
-            padding: const EdgeInsetsDirectional.only(end: 6),
+            padding:  EdgeInsetsDirectional.only(end: 6.r),
             child: DecoratedBox(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(8.r),
                 border: Border.all(
                   color: Theme.of(
                     context,
@@ -45,7 +47,7 @@ class _AppInputState extends State<AppInput> {
                 ),
               ),
               child: DropdownButton(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+                padding:  EdgeInsets.symmetric(horizontal: 16.r),
                 value: currentCuntryIndex,
                 items: list
                     .map(
