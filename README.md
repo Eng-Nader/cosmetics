@@ -19,9 +19,10 @@ Fully responsive using flutter_screenutil, and ready to be connected to any back
 
 ⚡ Fast performance (no backend logic)
 
-[![Watch the video](https://img.youtube.com/vi/RePEq5SD0cQ/maxresdefault.jpg)](https://youtu.be/RePEq5SD0cQ)
+### 🎥 Demo Video
 
+https://youtu.be/RePEq5SD0cQ
 
-
-
+### 📥 Download APK
+[Download app-release.apk](https://drive.google.com/file/d/1k0X83aro7A-BVS1_PSULd45iIDNDsw_V/view)
 

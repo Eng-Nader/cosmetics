@@ -1,4 +1,5 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../core/logic/helper_methods.dart';
 import '../core/ui/app_image.dart';
@@ -28,16 +29,16 @@ class _SplashViewState extends State<SplashView> {
     return Scaffold(
       body: Dance(
         duration: const Duration(seconds: 5),
-        child: const Center(
+        child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              AppImage(
+              const AppImage(
                 image: 'splash_logo_two.png',
               ),
 
-              SizedBox(height: 20),
-              AppImage(
+              SizedBox(height: 20.h),
+              const AppImage(
                 image: 'splash_logo_one.png',
               ),
             ],

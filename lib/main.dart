@@ -1,4 +1,3 @@
-
 import 'views/splash.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,6 +14,9 @@ class Cosmetics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
+      minTextAdapt: true,
+      splitScreenMode: true,
+      designSize: const Size(390, 844),
       child: MaterialApp(
         navigatorKey: navKey,
 
@@ -36,17 +38,17 @@ class Cosmetics extends StatelessWidget {
           ),
 
           inputDecorationTheme: InputDecorationTheme(
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 16,
+            contentPadding: EdgeInsets.symmetric(
+              horizontal: 16.r,
               vertical: 0,
             ),
             suffixIconColor: const Color(0xff8E8EA9),
             labelStyle: const TextStyle(
               color: Color(0xff8E8EA9),
             ),
-            hintStyle: const TextStyle(
-              color: Color(0xff8E8EA9),
-              fontSize: 12,
+            hintStyle: TextStyle(
+              color: const Color(0xff8E8EA9),
+              fontSize: 12.sp,
             ),
             floatingLabelStyle: const TextStyle(
               fontSize: 14,
@@ -55,16 +57,16 @@ class Cosmetics extends StatelessWidget {
             border: buildBorder(),
             enabledBorder: buildBorder(),
             focusedBorder: buildBorder(),
-            errorStyle: const TextStyle(height: .1, fontSize: 12),
+            errorStyle:  TextStyle(height: .1.h, fontSize: 12.sp),
           ),
 
           filledButtonTheme: FilledButtonThemeData(
             style: FilledButton.styleFrom(
               backgroundColor: const Color(0xffD75D72),
-              fixedSize: const Size.fromHeight(65),
+              fixedSize:  Size.fromHeight(65.h),
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(60),
+                borderRadius: BorderRadius.circular(60.r),
               ),
             ),
           ),

@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../core/logic/helper_methods.dart';
 import '../core/ui/app_image.dart';
 import 'auth/login.dart';
@@ -89,14 +91,14 @@ class _OnBoradingItem extends StatelessWidget {
                     ),
                   )
                 : Container(),
-            const SizedBox(
-              height: 50,
+             SizedBox(
+              height: 50.h,
             ),
             AppImage(
               image: onBordingModel.image,
             ),
-            const SizedBox(
-              height: 30,
+             SizedBox(
+              height: 30.h,
             ),
             Text(
               textAlign: TextAlign.center,
@@ -108,8 +110,8 @@ class _OnBoradingItem extends StatelessWidget {
                     : Colors.white,
               ),
             ),
-            const SizedBox(
-              height: 10,
+             SizedBox(
+              height: 10.h,
             ),
             Text(
               onBordingModel.subTitle,
@@ -121,14 +123,14 @@ class _OnBoradingItem extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(
-              height: 20,
+             SizedBox(
+              height: 20.h,
             ),
             if (currentIndex == 0 || currentIndex == 1)
               Center(
                 child: FloatingActionButton(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.circular(8.r),
                   ),
 
                   backgroundColor: const Color(0xff434C6D),
@@ -147,10 +149,10 @@ class _OnBoradingItem extends StatelessWidget {
                 onPressed: () {
                   goTo(const LoginView(), canPop: false);
                 },
-                child: const Text(
+                child:  Text(
                   'let’s start!',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
