@@ -2,7 +2,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/logic/helper_methods.dart';
 import '../../../core/ui/app_image.dart';
-import 'checkout.dart';
+import '../../../checkout.dart';
 import '../widgets/cart_view.dart';
 import 'package:flutter/material.dart';
 
@@ -14,14 +14,14 @@ class CartPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding:  EdgeInsets.symmetric(horizontal: 16.r),
+          padding: EdgeInsets.symmetric(horizontal: 16.r),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
                   const Spacer(),
-                   Text(
+                  Text(
                     'My Cart',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -30,23 +30,23 @@ class CartPage extends StatelessWidget {
                   ),
                   const Spacer(),
                   IconButton(
-                    onPressed: () => goTo(const CheckoutPage()),
+                    onPressed: () => goTo(const CheckoutView()),
                     icon: const AppImage(image: 'card.svg'),
                   ),
                 ],
               ),
-               SizedBox(
+              SizedBox(
                 height: 30.h,
               ),
 
-               Text(
+              Text(
                 'You have 4 products in your cart',
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-               SizedBox(
+              SizedBox(
                 height: 34.h,
               ),
 
